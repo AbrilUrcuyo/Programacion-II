@@ -1,0 +1,63 @@
+Sobre carga de operadores
+Los operadores se pueden sobrecargar
+
+
+Persona per1();
+Persona per2();
+int x= per1 + per2; 
+            |
+            ->No es error si la "suma" esta sobre cargada, si la suma no 
+estuviese sobrecargada seria un gran error 
+
+
+Si fuese una suma de las edades o los pesos de las personas tendria logica hacer esa suma
+
+Java no tiene sobrecarga de operadores, porquela sobrecraga violenta el princinpio de ocultamiento
+de la informacion 
+
+La sobrecarga de operadores no forma parte de la POO, esto se realiza a grandes velocidades
+
+
+Se puede sobrecargar cualquier operador:
+el new y el delete tambien se pueden sobrecargar, los (), <>, [],<=, >= , ==, * ,  suma, resta y demas
+
+Los unicos que no se pueden sobrecargar: :: , . , ? , "*."->para C, ("->" para c++) ,y otro 
+
+La sobrecarga permite poder tretar una persona como un entero, inclusive con un vector, con todo
+
+El mayor problema de la sobrecarga es la que no oculta la informacion
+
+Para sobrecargar un operador
+
+
+-------Formate general: -----------
+void   OPERATOR  Operador(const nombreDeClase&);
+                    |
+                    |
+-------Formato para la clase--------
+ Tiempo& OPERATOR     +    (const tipo& t2);
+           |                        |
+           |                        |
+-------Formato en el main----------
+return  = this        +       t2 (Termino de la derecha)
+
+
+
+La manera en la que el compilador diferencia que es un operador sobrecargado, 
+es porque a su lado derecho o izquierdo hay un objeto y la operacion no tiene sentido o es algo loco
+
+comcubinato: hacer que las clases sean amigas, esto viola el principio de ocultamiento
+
+Cuando se establece el comcubinato no importa se se realiza en la parte publica o privada 
+
+Cuando queremos desarrollar se debe quitar el "friend"
+          
+
+Constructor copia:
+Es aquel que con base a uno existente crea uno nuevo identico al primero, es 
+decir solo hay uno y al final tenemos dos objetos identicos, es uno de los 
+3 grandes, som my importantes
+
+
+
+
