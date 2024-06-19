@@ -1,0 +1,11 @@
+SINGLETON
+es solo utilizado cuando tenemos una clase, como cuando tenemos dos mouse conectados, solo se ve un cursor
+Es hacer una clase para un solo objeto, osea que una clase solo tenga una instancia, y tenga un punto de acceso global a ella
+Si no hay un singleton esta clase lo crea
+
+Se declara el contructor como privado, para que solo se pueda instancias una vez, ya que solo por acceso a un metodo se puede crear, si no, no
+
+Por medio de un metodo static public, se accede al constructor privado, para poder crearlo
+
+
+El atributo debe ser un static para que el metodo static lo pueda usar y sea global solo para uno
